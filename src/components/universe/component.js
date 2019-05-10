@@ -1,4 +1,5 @@
 var d3 = require('d3');
+var Ant = require('../../app/ant');
 
 var color = {
   ground: '#8A9544',
@@ -10,10 +11,13 @@ var color = {
 
 function does() {
   var svg = d3.select('svg').append('rect').attr('width', '256').attr('height', '256').attr('fill', color.ground);
+  console.log(new Ant);
 }
 
-module.exports = class {
+class Universe {
   onMount(){
     does();
   }
 }
+
+module.exports = Universe;
