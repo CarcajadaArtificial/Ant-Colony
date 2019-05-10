@@ -1,0 +1,37 @@
+{
+  "name": "ant-colony",
+  "version": "1.0.0",
+  "description": "This is a simulated ant colony with a.i. ants.",
+  "main": "index.js",
+  "scripts": {
+    "start": "marko-starter server",
+    "build": "marko-starter build",
+    "test": "marko test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarcajadaArtificial/Ant-Colony.git"
+  },
+  "author": "Oscar Alfonso Guerrero Nuñez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CarcajadaArtificial/Ant-Colony/issues"
+  },
+  "homepage": "https://github.com/CarcajadaArtificial/Ant-Colony#readme",
+  "devDependencies": {
+    "browser-refresh": "^1.7.3",
+    "browser-refresh-taglib": "^1.1.0"
+  },
+  "dependencies": {
+    "@lasso/marko-taglib": "^1.0.15",
+    "d3": "^5.9.2",
+    "express": "^4.16.4",
+    "lasso": "^3.3.0",
+    "lasso-marko": "^2.4.7",
+    "lasso-sass": "^3.0.0",
+    "marko": "^4.16.9",
+    "marko-cli": "^6.0.6",
+    "marko-prettyprint": "^2.0.0",
+    "node-sass": "^4.12.0"
+  }
+}
