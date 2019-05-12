@@ -1,24 +1,36 @@
-// Global constants
-const width = 4; // 4mm
-const height = 12; // 12mm
-
+// =====================================================================================================
+//       _          _   
+//      / \   _ __ | |_ 
+//     / _ \ | '_ \| __|
+//    / ___ \| | | | |_ 
+//   /_/   \_\_| |_|\__|
+//
+// =====================================================================================================
+/** 
+ * `~/src/app/ant.js` Contains the class Ant.
+ * 
+ * @class
+ * @property {foo} bar - Foobar
+ */
 class Ant {
+  /**
+   * Creates a new Ant object.
+   * @constructor
+   * @example
+   * var antony = new Ant();
+   */
   constructor() {
-    this.positionX = 0;
-    this.positionY = 0;
-    this.speed = 3;
   }
 
+  /**
+   * Prints a message from the ant.
+   * @return {string} Message spoken.
+   * @example
+   * var antony = new Ant();
+   * console.log(antony.talk());
+   */
   talk() {
-    console.log("Hi, I am an ant.")
-  }
-
-  think() {
-    
-  }
-
-  move() {
-
+    return "Hi, I am an ant.";
   }
 }
 

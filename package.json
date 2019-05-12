@@ -2,11 +2,10 @@
   "name": "ant-colony",
   "version": "1.0.0",
   "description": "This is a simulated ant colony with a.i. ants.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "marko-starter server",
-    "build": "marko-starter build",
-    "test": "marko test"
+    "test": "gulp test",
+    "docs": "gulp docs"
   },
   "repository": {
     "type": "git",
@@ -20,7 +19,9 @@
   "homepage": "https://github.com/CarcajadaArtificial/Ant-Colony#readme",
   "devDependencies": {
     "browser-refresh": "^1.7.3",
-    "browser-refresh-taglib": "^1.1.0"
+    "browser-refresh-taglib": "^1.1.0",
+    "gulp": "^4.0.2",
+    "jsdoc-to-markdown": "^4.0.1"
   },
   "dependencies": {
     "@lasso/marko-taglib": "^1.0.15",
