@@ -4,8 +4,9 @@
   "description": "This is a simulated ant colony with a.i. ants.",
   "main": "server.js",
   "scripts": {
-    "test": "gulp test",
-    "docs": "gulp docs"
+    "test": "marko test",
+    "docs": "gulp docs",
+    "br": "browser-refresh server.js"
   },
   "repository": {
     "type": "git",
@@ -20,8 +21,12 @@
   "devDependencies": {
     "browser-refresh": "^1.7.3",
     "browser-refresh-taglib": "^1.1.0",
+    "chai": "^4.2.0",
     "gulp": "^4.0.2",
-    "jsdoc-to-markdown": "^4.0.1"
+    "gulp-mocha": "^6.0.0",
+    "jsdoc-to-markdown": "^4.0.1",
+    "mocha": "^6.1.4",
+    "sassdoc": "^2.7.0"
   },
   "dependencies": {
     "@lasso/marko-taglib": "^1.0.15",

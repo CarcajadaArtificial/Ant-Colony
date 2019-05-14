@@ -8,7 +8,6 @@
 // =====================================================================================================
 /**
  * `~/server.js` Manages the server and ports.
- * @author Oscar Alfonso Guerrero
  * 
  * @namespace Server
  * @see {@link https://markojs.com/docs/express/ docs} for further information.

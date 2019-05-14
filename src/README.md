@@ -12,6 +12,9 @@
 ## Objects
 
 <dl>
+<dt><a href="#Test">Test</a> : <code>object</code></dt>
+<dd><p><code>~/src/app/test/*.test.js</code> &amp; <code>~/src/components/.../test.js</code> Contain assertion funtions using <code>Chai.js</code> described and runned with <code>Mocha.js</code>.</p>
+</dd>
 <dt><a href="#Gulp">Gulp</a> : <code>object</code></dt>
 <dd><p><code>~/gulpfile.js</code> Contains functions that do jobs otherwise done manually in a terminal, and tasks that orchestrate these.</p>
 </dd>
@@ -20,6 +23,14 @@
 </dd>
 <dt><a href="#Routes">Routes</a> : <code>object</code></dt>
 <dd><p><code>~/routes.js</code> Manages all HTML and JSON API end points.</p>
+</dd>
+</dl>
+
+## Constants
+
+<dl>
+<dt><a href="#gulp">gulp</a></dt>
+<dd><p>To-do list</p>
 </dd>
 </dl>
 
@@ -64,7 +75,6 @@ console.log(antony.talk());
 
 **Kind**: global class  
 **Requires**: <code>module:NPM:d3</code>, <code>module:~/src/app/ant:Ant</code>  
-**Author**: Oscar Alfonso Guerrero  
 **Properties**
 
 | Name | Type | Description |
@@ -100,18 +110,44 @@ var color = {
   other: '#503038'
 }
 ```
+<a name="Test"></a>
+
+## Test : <code>object</code>
+`~/src/app/test/*.test.js` & `~/src/components/.../test.js` Contain assertion funtions using `Chai.js` described and runned with `Mocha.js`.
+
+**Kind**: global namespace  
+**Summary**: Every method of every class must be described and tested. Files will contain inside their name the assigned class being tested `ant.test.js` tests the Ant class inside `~/src/app/ant.js`. To control what classes to test and not test, comment out the class requirement that is not wished to be tested. Requirement list is found inside `~/src/app/test/test.js`.  
+
+* [Test](#Test) : <code>object</code>
+    * [.Ant](#Test.Ant)
+    * [.Universe](#Test.Universe)
+
+<a name="Test.Ant"></a>
+
+### Test.Ant
+Tests the class inside `~/src/app/ant.js`.
+
+**Kind**: static property of [<code>Test</code>](#Test)  
+**Requires**: <code>module:NPM:chai</code>, <code>module:../ant:Ant</code>  
+<a name="Test.Universe"></a>
+
+### Test.Universe
+Tests the class component inside `~/src/components/universe/compnent.js`.
+
+**Kind**: static property of [<code>Test</code>](#Test)  
+**Requires**: <code>module:NPM:chai</code>  
 <a name="Gulp"></a>
 
 ## Gulp : <code>object</code>
 `~/gulpfile.js` Contains functions that do jobs otherwise done manually in a terminal, and tasks that orchestrate these.
 
 **Kind**: global namespace  
-**Requires**: <code>module:NPM:gulp</code>, <code>module:NPM:fs</code>, <code>module:NPM:jsdoc-to-markdown</code>  
+**Requires**: <code>module:NPM:gulp</code>, <code>module:NPM:fs</code>, <code>module:NPM:jsdoc-to-markdown</code>, <code>module:NPM:sassdoc</code>  
 **See**: [docs](https://gulpjs.com/docs/en/getting-started/creating-tasks) for further information.  
-**Author**: Oscar Alfonso Guerrero  
 
 * [Gulp](#Gulp) : <code>object</code>
     * [.jsDocs](#Gulp.jsDocs)
+    * [.sassDocs](#Gulp.sassDocs)
     * [.unitTest](#Gulp.unitTest)
     * [.docs](#Gulp.docs)
     * [.test](#Gulp.test)
@@ -120,7 +156,18 @@ var color = {
 <a name="Gulp.jsDocs"></a>
 
 ### Gulp.jsDocs
-Executes a Gulp function that turns JSDoc comments into documentation inside `~/src/README.md`.
+Turns JSDoc annotations into documentation inside `~/src/README.md`.
+
+**Kind**: static property of [<code>Gulp</code>](#Gulp)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| cb | <code>function</code> | Callback function for executing asynchronously. |
+
+<a name="Gulp.sassDocs"></a>
+
+### Gulp.sassDocs
+Turns sassdoc annotations into documentation inside `~/src/style/docs`.
 
 **Kind**: static property of [<code>Gulp</code>](#Gulp)  
 
@@ -169,7 +216,6 @@ Running inside the terminal the command `gulp watchDocs` watches and executes in
 - [docs](https://markojs.com/docs/express/) for further information.
 - [example](https://github.com/marko-js-samples/weather/blob/master/server.js).
 
-**Author**: Oscar Alfonso Guerrero  
 <a name="Server.listen"></a>
 
 ### Server.listen
@@ -199,4 +245,15 @@ Running inside the terminal the command `npm start` or `node server.js` will sta
 | --- | --- | --- |
 | req | <code>object</code> | Request object. |
 | res | <code>object</code> | Response object. |
+
+<a name="gulp"></a>
+
+## gulp
+To-do list
+
+**Kind**: global constant  
+**Todo**
+
+- [ ] Add a testing task.
+- [ ] Add a SassDoc task.
 

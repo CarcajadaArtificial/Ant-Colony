@@ -10,7 +10,6 @@ var d3 = require('d3');
 var Ant = require('../../app/ant');
 /** 
  * `~/src/components/universe/component.js` Contains the component class Universe.
- * @author Oscar Alfonso Guerrero
  * 
  * @class
  * @property {foo} bar - Foobar
@@ -19,10 +18,17 @@ var Ant = require('../../app/ant');
  * @requires ~/src/app/ant:Ant
  */
 class Universe {
+  onCreate() {
+    this.state = {
+      _isCreated: true,
+      _isMounted: false
+    }
+  }
   /**
    * This function is executed once after the component is mounted.
    */
   onMount() {
+    this.state._isMounted = true;
     does();
   }
 }
@@ -48,7 +54,7 @@ var color = {
 }
 
 function does() {
-  var svg = d3.select('svg').append('rect').attr('width', '256').attr('height', '256').attr('fill', color.ground);
+  var svg = d3.select('#surface').append('rect').attr('width', '256').attr('height', '256').attr('fill', color.ground);
   var ant = new Ant;
   console.log(ant.talk());
 }
