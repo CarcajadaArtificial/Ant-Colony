@@ -26,7 +26,9 @@
     "gulp-mocha": "^6.0.0",
     "jsdoc-to-markdown": "^4.0.1",
     "mocha": "^6.1.4",
-    "sassdoc": "^2.7.0"
+    "sass-true": "^4.0.0",
+    "sassdoc": "^2.7.0",
+    "sloc": "^0.2.1"
   },
   "dependencies": {
     "@lasso/marko-taglib": "^1.0.15",
@@ -37,7 +39,6 @@
     "lasso-sass": "^3.0.0",
     "marko": "^4.16.9",
     "marko-cli": "^6.0.6",
-    "marko-prettyprint": "^2.0.0",
     "node-sass": "^4.12.0"
   }
 }

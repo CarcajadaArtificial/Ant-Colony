@@ -1,6 +1,11 @@
 # Ant-Colony
 This is a simulated ant colony with a.i. ants.
 
+# To - Do
+ * [ ] Add Sass unit testing with True.
+ * [ ] Add Tensorflow library.
+ * [*] Add a LOC counter.
+
 # Vulnerabilities
 ```
                        === npm audit security report ===                        
